@@ -2,7 +2,7 @@ import SpotifyWebApi from 'spotify-web-api-js';
 import { TrackData } from '../types/spotify';
 
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
-const REDIRECT_URI = `${window.location.origin}/callback`;
+const REDIRECT_URI = 'https://wrapped-insights.vercel.app/';
 const SCOPES = [
   'user-read-recently-played',
   'user-top-read',
@@ -49,9 +49,9 @@ class SpotifyService {
       artist: track.artists[0].name,
       album: track.album.name,
       albumCover: track.album.images[0]?.url || '',
-      playCount: 0, // Spotify API doesn't provide play count
+      playCount: 0,
       duration: Math.floor(track.duration_ms / 1000),
-      lastPlayed: new Date().toISOString(), // Use current time as Spotify doesn't provide this
+      lastPlayed: new Date().toISOString(),
     }));
   }
 
