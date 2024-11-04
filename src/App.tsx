@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Clock, Music, Headphones, BarChart3 } from 'lucide-react';
 import Header from './components/Header';
 import TimeRangeSelector from './components/TimeRangeSelector';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Music2 } from 'lucide-react';
 
 interface Props {
