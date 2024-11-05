@@ -1,4 +1,3 @@
-import React from 'react';
 import { Music2, Clock, BarChart3 } from 'lucide-react';
 
 export default function Header() {
