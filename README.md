@@ -1,50 +1,86 @@
-# React + TypeScript + Vite
+# 🎧 Spotify Wrapped Insights
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application that connects to the Spotify API to analyze and display personalized music listening trends — just like your very own **Spotify Wrapped**, anytime you want!
 
-Currently, two official plugins are available:
+## 📝 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Spotify Wrapped Insights** is a web app that fetches user listening data from Spotify to visualize your most played tracks, top artists, favorite genres, and more. It's a fun way to discover your music habits throughout the year, month, or even just the week.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 🔒 Secure Spotify Authentication (OAuth 2.0)
+- 📈 Personalized insights:
+  - Top Tracks
+  - Top Artists
+  - Top Genres
+  - Listening History
+- 🕒 Choose Time Range: Short-Term (4 weeks), Medium-Term (6 months), or Long-Term (years)
+- 🎨 Clean and responsive UI
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Built With
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend:** React / Next.js / Vite (update as applicable)
+- **Styling:** Tailwind CSS / Styled Components (update as applicable)
+- **API:** Spotify Web API
+- **Authentication:** Spotify OAuth
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🧪 Demo
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+**Live Demo:** [https://wrapped-insights.vercel.app/]  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+## 🔐 Getting Started
+
+
+To run this project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Nkosinathiz/wrapped-insights.git
+cd spotify-wrapped-insights
+
+## 🤝 Contributing
+
+Contributions are welcome and appreciated! If you'd like to improve this project, follow these steps:
+
+### 1. Fork the Repository
+
+Click the **Fork** button in the top-right corner of the GitHub repo to create your own copy.
+
+### 2. Clone Your Fork
+
+```bash
+git clone https://github.com/Nkosinathiz/wrapped-insights.git
+cd spotify-wrapped-insights
+
+### 3. Create a new Branch
+
+
+git checkout -b feature/your-feature-name
+
+### 4. Make your changes
+
+### 5. Commit and Push
+
+git add .
+git commit -m "Add: your meaningful commit message"
+git push origin feature/your-feature-name
+
+### 6. Open a Pull Request
+
+Go to your forked repository and click Compare & pull request. Provide a clear description of what you've done and why.
+
+Guidelines
+Follow the existing code style and naming conventions.
+
+  > Keep pull requests small and focused.
+
+  > Test your changes thoroughly before submitting.
+
+  > If fixing a bug, link to the issue number if applicable.
+
+  > Be respectful and collaborative.
+
+
+Thank you for helping improve Spotify Wrapped Insights! 🙌
